@@ -1,0 +1,22 @@
+.scroll-menu {
+  display: flex;
+  overflow-x: auto;
+  padding: 20px;
+}
+
+.card {
+  flex: 0 0 auto;
+  width: 200px;
+  height: 150px;
+  margin-right: 20px;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  margin: 0;
+}
