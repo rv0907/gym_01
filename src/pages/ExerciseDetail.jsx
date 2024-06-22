@@ -1,7 +1,9 @@
 import React from "react";
 
-const ExerciseDetail = () => {
-  return <div>ExerciseDetails</div>;
+const ExerciseDetail = ({ instructions, setinstruction }) => {
+  console.log(instructions);
+  console.log("h");
+  return <div>{instructions}</div>;
 };
 
 export default ExerciseDetail;

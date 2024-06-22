@@ -8,7 +8,7 @@ import {
   CardActionArea,
 } from "@mui/material";
 
-const ExerciseCard = ({ exercisee }) => {
+const ExerciseCard = ({ exercisee, instructions, setinstruction }) => {
   return (
     <Card
       variant='outlined'
@@ -27,7 +27,12 @@ const ExerciseCard = ({ exercisee }) => {
         },
       }}
     >
-      <CardActions src={`/exercise/${exercisee.id}`}>
+      <CardActions
+        src={`/exercise/${exercisee.id}`}
+        onClick={() => {
+          setinstruction(exercisee.instructions);
+        }}
+      >
         <CardContent
           key={exercisee.id}
           sx={{
