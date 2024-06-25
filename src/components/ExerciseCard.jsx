@@ -31,6 +31,7 @@ const ExerciseCard = ({ exercisee, instructions, setinstruction }) => {
         src={`/exercise/${exercisee.id}`}
         onClick={() => {
           setinstruction(exercisee.instructions);
+          console.log(instructions);
         }}
       >
         <CardContent

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-
+import { initializeApp } from "firebase/app";
 import { Box } from "@mui/material";
 
 import "./App.css";
@@ -28,7 +28,7 @@ function App() {
               }
             />
             <Route
-              path='\pages\ExerciseDetails.jsx'
+              path='/exercise/:id'
               element={
                 <ExerciseDetail
                   instructions={instructions}
