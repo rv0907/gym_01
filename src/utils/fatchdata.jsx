@@ -29,3 +29,7 @@ export const fetchdata = async (url, options, retries = 3, backoff = 3000) => {
     throw error;
   }
 };
+
+export const youtubeOptions = async () => {
+  return <></>;
+};

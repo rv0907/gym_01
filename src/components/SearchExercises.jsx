@@ -25,7 +25,7 @@ const SearchExercises = ({ setExercises, setbodypart, bodypart }) => {
         "https://exercisedb.p.rapidapi.com/exercises?offset=0&limit=300",
         exerciseoptions
       );
-      // console.log(data);
+
       const info = data.filter((exercise) => {
         const nameIncludes =
           exercise.name && exercise.name.toLowerCase().includes(search);
@@ -36,14 +36,8 @@ const SearchExercises = ({ setExercises, setbodypart, bodypart }) => {
           exercise.equipment.toLowerCase().includes(search);
         const bodypartIncludes =
           exercise.bodyPart && exercise.bodyPart.toLowerCase().includes(search);
-        console.log(
-          // nameIncludes ||
-          targetIncludes || equipmentIncludes || bodypartIncludes
-        );
-        return (
-          // nameIncludes ||
-          targetIncludes || equipmentIncludes || bodypartIncludes
-        );
+
+        return targetIncludes || equipmentIncludes || bodypartIncludes;
       });
       setsearch("");
 
